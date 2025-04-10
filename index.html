@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cinema Sticky Navbar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- navbar -->
+     <section id="Home">
+      <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#home"><img src="image/f1d85520-08a4-4814-8a2e-390e2f6328a7.png" alt=""
+            style="width: 59px;"></a></a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#home" >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#services">
+                  services
+                </a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#QSk">
+                  QSk
+                </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#footer">
+                   Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="d-none d-lg-block">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBWIu-e01r7iqf2JNEjFBgSl1bIhN9LOZhmA5DBBO5eG_XMw/viewform?usp=header" target="_blank"><button class="nav-button">🎟️ Book Now</button></a>
+          </div>
+        </div>
+      </nav>
+     </section>
+  <!-- banner  step 1  -->
+  <section id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+  
+      <div class="carousel-item active">
+        <div class="hero-slide d-flex justify-content-center align-items-center text-white text-center" style="background-image: url(image/banner.png); ">
+          <div>
+            <h1 class="display-4 fw-bold"> That Captivate</h1>
+            <p class="lead">Show your brand creative and leave a lasting impact.</p>
+            <a href="#contact" class="btn btn-warning btn-lg mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <div class="hero-slide d-flex justify-content-center align-items-center text-white text-center" style="background-image: url(image/business-concept-with-graphic-holography.jpg);">
+          <div>
+            <h1 class="display-4 fw-bold">Engage Advertisement Effectively</h1>
+            <p class="lead">Advertising at the movies gives your message star power.</p>
+            <a href="#contact" class="btn btn-warning btn-lg mt-3">Book Your Ad</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <div class="hero-slide d-flex justify-content-center align-items-center text-white text-center" style="background-image: url(image/brick-wall-background.jpg);">
+          <div>
+            <h1 class="display-4 fw-bold">Big Screen. Big Impact.</h1>
+            <p class="lead">Put your brand in front of thousands with cinema advertising.</p>
+            <a href="#contact" class="btn btn-warning btn-lg mt-3">Start Today</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- LEFT BUTTON -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); border-radius: 50%; padding: 10px;"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+  
+    <!-- RIGHT BUTTON -->
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); border-radius: 50%; padding: 10px;"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+  <!-- BRAND  -->
+  <section class="problem container-fluid text-center p-5" style="background-color: #373A40; color: #EEEEEE;">
+    <h2 >The Problem</h2>
+    <p style="background-color: #373A40; font-weight:bold; font-size: x-large; padding-bottom: 25px; color: #ECDCBF;padding: 20px;">
+        Struggling to get
+        visibility and engagement for your brand?</p>
+</section>
+  <!-- SERVICE --> 
+<section class="slider-section services py-5" id="services">
+  <h5 class="text-center " style="color: #e86f19;">My Service</h5>
+  <h2 class="text-center mb-5">Integrated Digital Solutions</h2>
+  <div class="card-slider" id="cardSlider">
+    <div class="scroll-controls">
+      <button class="sol-btn" onclick="scrollCardsLeft()" style=" font-size: small;"><i class="bi bi-caret-left-fill"></i></button>
+      <button class="sol-btn" onclick="scrollCardsRight()" style="font-size: small;"><i class="bi bi-caret-right-fill"></i></button>
+   </div>
+    <!-- Card 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-image: url('image/3d-cinema-popcorn-cup-with-seating.jpg');">
+          <h4>Cinema</h4>
+          <p>Your brand is struggling to attract attention.</p>
+          <button class="cards-button more-info" style="color: red;">More Info</button>
+        </div>
+        <div class="flip-card-back">
+          <h4 style="color: crimson;">More Information</h4>
+          <p style="font-weight: 400; font-size: small;">On screen: 8999(30sec 30days)</p>
+          <p style="font-weight: 400; font-size: small;">On screen: 2999(30sec 7days)</p>
+          <p style="font-weight: 400; font-size: small;">Out side banner  - 4999 28days</p>
+          <p style="font-weight: 100; font-size: small;">need edit video: + 1999(if you already have edited video no cliamed)</p>
+          <button class="cards-button mx-auto">need more</button>
+          <button class="cards-button go-back">Go Back</button>
+        </div>
+      </div>
+    </div>
+    <!-- card 2 -->
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background-image: url('image/collage-people-using-reels.jpg');">
+            <h4>influencer</h4>
+            <p>Your brand is struggling to attract attention.</p>
+            <button class="cards-button more-info" style="color: red;">More Info</button>
+          </div>
+          <div class="flip-card-back">
+            <h4 style="color: blueviolet;">More Information</h4>
+            <p style="font-weight: 100; font-size:x-small;"> Best for: Local businesses or new brands <br>
+              Includes:- 1 Micro-Influencer (5k-20k followers) <br>- 1 Instagram Post + 1 Story <br> - Basic content creation- Hashtag + brand mention <br>- Campaign report (Reach, Impressions)
+             <br> Goal: Drive awareness in a local audience</p>
+             <p style="font-weight: 100; font-size: small;">price: 5000 - 15000</p>
+             <button class="cards-button mx-auto">need more</button>
+            <button class="cards-button go-back">Go Back</button>
+          </div>
+        </div>
+      </div> 
+     <!-- card 3 -->
+     <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-image: url('image/social-media-icons-rendering.jpg');">
+          <h4>Outdoor</h4>
+          <p>Your brand is struggling to attract attention.</p>
+          <button class="cards-button more-info" style="color: red;">More Info</button>
+        </div>
+        <div class="flip-card-back">
+          <h4>More Information</h4>
+          <p>Details about Cinema solutions.</p>
+          <button class="cards-button mx-auto">need more</button>
+          <button class="cards-button go-back">Go Back</button>
+        </div>
+      </div>
+    </div> 
+    <!-- card 4 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-image: url('image/empty-billboard-metropolis-city.jpg');">
+          <h4>Billboards</h4>
+          <p>Your brand is struggling to attract attention.</p>
+          <button class="cards-button more-info" style="color: red;">More Info</button>
+        </div>
+        <div class="flip-card-back">
+          <h4>More Information</h4>
+          <p>15x10 flex : 1800 </p>
+          <p>worker fees : 2000</p>
+          <p>customizing the flex size</p>
+          <button class="cards-button mx-auto">need more</button>
+          <button class="cards-button go-back">Go Back</button>
+        </div>
+      </div>
+    </div> 
+    <!-- card 5 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front"style="background-image: url('image/earth-seen-from-space.jpg');">
+          <h4>Premium</h4>
+          <p>Your brand is struggling to attract attention.</p>
+          <button class="cards-button more-info" style="color: red;">More Info</button>
+        </div>
+        <div class="flip-card-back">
+          <h4>More Information</h4>
+          <p>Event and Compaign</p>
+          <p  style="font-weight: 100; font-size:small;" >Event Day Branding
+            Standees, entry gates, stage backdrops, photo booths
+            Price: ₹1,500 – ₹30,000 (depends on size & quantity)
+            ✅ Complete visual takeover of your event venue
+            </p>
+          <button class="cards-button mx-auto">need more</button>
+          <button class="cards-button go-back">Go Back</button>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+  <!-- PROTFOLIO -->
+ <section class="proof container-fluid text-center my-3 py-5 " style="background-color: #e86f19;">
+        <h2 style="margin: 10px 0px">Our Portfolio</h2>
+        <p style="margin-bottom: 1%;">Check out our successful campaigns.</p>
+        <div class="car rounded-4 shadow bg-light" style=" height:100%; width: 100%; padding: 280px 0px; border-radius: 24px; border-color: #EEEEEE; background-repeat: no-repeat; background-size: cover;
+        background-position: center; background-image: url(image/protfolio\ \(1\).jpg); color: aliceblue; "> </div>
+  
+  <!-- ABOUT US -->
+  <section class="about container-fluid py-5" id="about" style="background-color: #e86f19;" >
+    <h2 class="text-center text-white mb-4">About Us</h2>
+    <p>Our mission is to help brands achieve their goals through innovative strategies and creative excellence.</p>
+    
+    <div class="row g-4 align-items-stretch">
+      <!-- Image Column -->
+      <div class="col-lg-6 d-flex">
+        <div class="position-relative w-100 rounded-4  shadow bg-light overflow-hidden" style="min-height: 100%;">
+          <img src="image/team-meeting-modern-office.jpg" alt="Our Team"
+               class="img-fluid w-100 h-10 object-fit-cover rounded-4">
+          <h1 class="position-absolute top-50 start-50 translate-middle text-white fw-bold text-center px-2"
+              style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Our Team</h1>
+        </div>
+      </div>
+  
+      <!-- Text Card Column -->
+      <div class="col-lg-6 d-flex">
+        <div class="card w-100 border-0 rounded-4 shadow bg-light d-flex flex-column justify-content-center text-center p-5">
+          <div class="card-body" >
+            <h4 class="card-title mb-3" style="color: #e86f19;">Who We Are</h4>
+            <p class="card-text mb-3">
+              At Octacore, we believe in the power of bold ideas and impactful storytelling. We're a team of passionate creators, strategists, and visionaries who work together to help brands rise above the noise and make meaningful connections with their audience. <br> <br>
+              With years of experience across digital, print, outdoor, and social platforms, we specialize in crafting unique advertising strategies that not only capture attention but also drive real results. Whether it's a startup looking to build its identity or a well-established company ready to reinvent itself, we bring fresh perspectives and a relentless pursuit of excellence to every project.
+              Our mission is simple: to elevate your brand through creativity, strategy, and innovation. We’re more than just an agency — we’re your growth partner.
+              Let’s create something amazing together.
+            </p>
+            <p class="card-text">
+              With experience across industries, we tailor each project to fit our client’s unique identity and goals—
+              because your success is our success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+  <!-- QSK -->
+  <section class="faq container py-5 " id="QSk" >
+    <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+  
+      <!-- Question 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+            What services do you offer?
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We offer advertising strategy, digital marketing, branding, content creation, and media planning tailored to your goals.
+          </div>
+        </div>
+      </div>
+  
+      <!-- Question 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+            How can I contact your team?
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Just contact us through our website or email and our team will provide a tailored quote based on your needs.
+          </div>
+        </div>
+      </div>
+  
+      <!-- Question 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+            Do you work with small businesses or startups?
+          </button>
+        </h2>
+        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes! We love partnering with startups and small businesses to help them grow their brand visibility and reach.
+          </div>
+        </div>
+      </div>
+  
+      <!-- Question 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+            How long does a campaign take to launch?
+          </button>
+        </h2>
+        <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Timelines depend on your project scope, but typically a campaign can launch within 1-2 weeks after approval.
+          </div>
+        </div>
+      </div>
+  
+      <!-- Question 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+            What industries do you specialize in?
+          </button>
+        </h2>
+        <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We work across various industries including retail, entertainment, education, healthcare, and tech — customizing strategies for each.
+       
+          </div>
+        </div>
+      </div>
+  
+      <!-- Question 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+            Do you offer analytics and reporting?
+          </button>
+        </h2>
+        <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we provide detailed reports and insights to track the success and performance of your campaigns.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTEXT FORM -->
+  <section class="cta card container text-center bg-white ml-4  p-4" id="cta" style="background-image: url(image/contact.jpg); background-size: cover;">
+      <h2 style="color: #EEEEEE;">Ready to Elevate Your Brand?</h2>
+      <h5 style="color: #EEEEEE;">we'd loved to help you.</h5>
+      <a href="https://wa.me/+918438775281?text=Hello Octacore.."  class="btn click" style=" border-radius: 12px; color: #EEEEEE;">Contact Us Now</a>
+  </section>
+  <!-- FOOTER -->
+   <section id="footer">
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Company Info -->
+          <div class="col-md-4 mb-4">
+            <h4 class="fw-bold">Octa-core</h4>
+            <p>Empowering brands through creative advertising and smart strategy.</p>
+          </div>
+    
+          <!-- Navigation Links -->
+          <div class="col-md-4 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+              <li><a href="#QSk" class="text-white text-decoration-none">FAQ</a></li>
+              <li><a href="#footer" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+    
+          <!-- Social Media -->
+          <div class="col-md-4 mb-4">
+            <h5>Follow Us</h5>
+            <div class="d-flex justify-content-center justify-content-md-start gap-3">
+              <a href="" class="text-white"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/octacore.co?igsh=MXR4eXV4d3RzbHk5YQ==" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/octacore-93088b358/" class="text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <hr class="border-top border-light">
+        <div class="text-center small">
+          &copy; 2025 Octacore. All rights reserved.
+        </div>
+      </div>
+    </footer>
+   </section>
+ 
+  <!-- scroll button -->
+  <button id="scrollToTopBtn" class="btn  rounded-circle shadow" style="color: #EEEEEE; background-color: #e86f19;" title="Go to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  
+  
+
+<script>
+function scrollCardsLeft() {
+    const container = document.getElementById('cardSlider');
+    container.scrollBy({ left: -320, behavior: 'smooth' });
+  }
+
+  function scrollCardsRight() {
+    const container = document.getElementById('cardSlider');
+    container.scrollBy({ left: 320, behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('.more-info').forEach(button => {
+    button.addEventListener('click', function() {
+      this.closest('.flip-card').classList.add('flipped');
+    });
+  });
+
+  document.querySelectorAll('.go-back').forEach(button => {
+    button.addEventListener('click', function() {
+      this.closest('.flip-card').classList.remove('flipped');
+    });
+  });
+
+</script>
+<script>
+  // Flip functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    const flipCard = document.querySelector(".filp-cards");
+    const moreBtn = document.querySelector(".more-info-btn");
+    const lessBtn = document.querySelector(".less-info-btn");
+
+    moreBtn.addEventListener("click", () => {
+      flipCard.classList.add("flipped");
+    });
+
+    lessBtn.addEventListener("click", () => {
+      flipCard.classList.remove("flipped");
+    });
+
+    // Match height of flip card to image
+    const img = document.getElementById("aboutImage");
+    const flipInner = document.getElementById("flipCardInner");
+
+    function matchHeight() {
+      const imageHeight = img.clientHeight;
+      flipInner.style.height = imageHeight + "px";
+    }
+
+    img.addEventListener("load", matchHeight);
+    window.addEventListener("resize", matchHeight);
+    matchHeight(); // Call initially in case image is cached
+  });
+</script>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollToTopBtn.style.display = "flex";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  scrollToTopBtn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
